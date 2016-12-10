@@ -1,0 +1,9 @@
+{
+  "name": "pixi-starter-pack",
+  "version": "1.0.0",
+  "description": "A starter pack for PIXI.js with webpack",
+  "main": "src/index.js",
+  "repository": "git@github.com:hendrikniemann/pixi-starter-pack.git",
+  "author": "hendrikniemann <h.neverman@web.de>",
+  "license": "MIT"
+}
