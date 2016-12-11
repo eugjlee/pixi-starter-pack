@@ -5,5 +5,30 @@
   "main": "src/index.js",
   "repository": "git@github.com:hendrikniemann/pixi-starter-pack.git",
   "author": "hendrikniemann <h.neverman@web.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack"
+  },
+  "babel": {
+    "presets": [
+      "es2016",
+      "es2017"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "brfs": "^1.4.3",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "transform-loader": "^0.2.3",
+    "webpack": "2.1.0-beta.26"
+  },
+  "dependencies": {
+    "howler": "^2.0.2",
+    "pixi.js": "^4.2.3",
+    "ramda": "^0.22.1"
+  }
 }
