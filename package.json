@@ -15,9 +15,7 @@
         "env",
         {
           "targets": {
-            "browserlist": [
-              "last 2 Firefox versions"
-            ]
+            "browsers": ["last 2 Firefox versions"]
           }
         }
       ],
