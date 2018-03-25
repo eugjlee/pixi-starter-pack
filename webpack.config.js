@@ -7,11 +7,6 @@ module.exports = {
     path: path.join(__dirname, 'bin'),
     filename: 'bundle.js',
   },
-  resolve: {
-    alias: {
-      pixi: 'pixi.js',
-    },
-  },
   node: {
     fs: 'empty',
   },
