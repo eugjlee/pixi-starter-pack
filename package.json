@@ -15,7 +15,9 @@
         "env",
         {
           "targets": {
-            "browserlist": ["last 2 Firefox versions"]
+            "browserlist": [
+              "last 2 Firefox versions"
+            ]
           }
         }
       ],
@@ -31,6 +33,7 @@
     "file-loader": "^1.1.11",
     "flow-bin": "^0.68.0",
     "json-loader": "^0.5.4",
+    "prettier": "^1.11.1",
     "transform-loader": "^0.2.3",
     "webpack": "^4.2.0",
     "webpack-dev-server": "^3.1.1"
