@@ -20,7 +20,7 @@ module.exports = {
       {
         test: /\.jpe?g$|\.svg$|\.png$|\.wav$|\.mp3$/,
         exclude: /node_modules/,
-        use: 'file-loader?name=[path][name].[ext]',
+        use: 'file-loader?name=[name].[ext]',
       },
       {
         test: /index.html$/,
@@ -28,9 +28,10 @@ module.exports = {
         use: 'file-loader?name=index.html',
       },
       {
-        include: path.resolve(__dirname, 'node_modules/pixi.js'),
-        use: 'transform-loader?brfs',
-        enforce: 'post',
+        test: /\.json$/,
+        include: /assets/,
+        use: 'texture-pack-loader',
+        type: 'javascript/auto',
       },
     ],
   },

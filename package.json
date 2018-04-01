@@ -7,7 +7,7 @@
   "author": "hendrikniemann <h.neverman@web.de>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server"
   },
   "babel": {
     "presets": [
@@ -19,17 +19,22 @@
           }
         }
       ],
+      "react",
       "flow"
-    ]
+    ],
+    "plugins": ["transform-class-properties", "transform-object-rest-spread"]
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "brfs": "^1.4.3",
     "file-loader": "^1.1.11",
-    "flow-bin": "^0.68.0",
+    "flow-bin": "^0.69.0",
     "json-loader": "^0.5.4",
     "prettier": "^1.11.1",
     "transform-loader": "^0.2.3",
@@ -39,6 +44,9 @@
   "dependencies": {
     "howler": "^2.0.9",
     "pixi.js": "^4.7.1",
+    "react": "^16.3.0",
+    "react-pixi-fiber": "^0.4.3",
+    "rxjs": "^5.5.8",
     "webpack-cli": "^2.0.13"
   }
 }
